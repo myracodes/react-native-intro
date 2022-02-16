@@ -3,29 +3,36 @@ import { StyleSheet, Text, View, Button } from "react-native";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text style={{ color: "black" }}>Youpi ça marche :D</Text>
-      <StatusBar style="auto" />
-      <Text style={{ color: "yellow" }}>Et un autre !</Text>
-      <Button
-        // onPress={onPressAction}
-        title="Click me"
-        color="#841584"
-        accessibilityLabel="This is a test button"
-        s
-      />
-      <Text style={{ color: "#FFF" }}>Et encore un !</Text>
-      <Text style={{ color: "#FFF" }}>Et encore un !</Text>
-      <Text style={{ color: "#FFF" }}>Et encore un !</Text>
-    </View>
+    <>
+      <View style={styles.container1}>
+        <Text style={{ color: "blue" }}>Hello, world!</Text>
+        <Text style={{ color: "blue" }}>Hello, world!</Text>
+        <Text style={{ color: "blue" }}>Hello, world!</Text>
+        <Button
+          // onPress={onPressAction}
+          title="This is a button"
+          color="dodgerblue"
+          accessibilityLabel="This is a button"
+        />
+      </View>
+      <View style={styles.container2}>
+        <Text style={{ color: "blue" }}>Hello, world!</Text>
+        <Text style={{ color: "blue" }}>Hello, world!</Text>
+        <Text style={{ color: "blue" }}>Hello, world!</Text>
+      </View>
+    </>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
+  container1: {
     flex: 1,
-    backgroundColor: "#f0f",
+    backgroundColor: "grey",
     alignItems: "center",
     justifyContent: "center",
+  },
+  container2: {
+    backgroundColor: "lightgreen",
+    alignItems: "flex-end",
   },
 });
